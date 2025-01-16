@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+ 
+RewriteEngine on
+ 
+RewriteCond %{REQUEST_FILENAME} !-d
+ 
+RewriteCond %{REQUEST_FILENAME}.php -f
+ 
+RewriteRule ^(.*)$ $1.php
+ 
+</IfModule>
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^.*$ ./index.php
+
+ErrorDocument 404 /index.php
