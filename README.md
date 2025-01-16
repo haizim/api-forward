@@ -20,6 +20,9 @@ Maka yang perlu dilakukan ialah:
 - endpoint : https://fwd.test.com/user/detail
 - pada header tambahkan key "destination" dengan value "https://api-test.com"
 
-| Original | Forwarded |
-|---|---|
-| ![Original](/img/original.png) | ![Forwarded](/img/forwarded.png) |
+### Original
+![Original](/img/original.png)
+
+### Forwarded
+![Forwarded](/img/forwarded.png)
+
